@@ -26,7 +26,7 @@ router.get('/data', (request, response) => {
     axios.post('https://finetuning-esg-sentime-9fefozeg.germanywestcentral.inference.ml.azure.com/score', {inputs: input},
     {headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer fxvn9ugdm66eRboPRhlH3u6Zw8N1qCCe',
+        'Authorization': 'Bearer <token>',
         }
     }).then ( responses => {
         console.log('response: ', responses["data"])
